@@ -3,13 +3,13 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1"
   },
-  "name": "gchon-node",
+  "name": "{{ name }}",
   "version": "0.1.0",
-  "description": "node-cli",
+  "description": "{{ description }}",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "gcnova",
+  "author": "{{ author }}",
   "license": "ISC"
 }
