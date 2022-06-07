@@ -1,7 +1,9 @@
 const express = require("express");
 
 // 引入外部模块
-const index = require("./routes/index");
+const frontend = require("./routes/frontend");
+const backend = require("./routes/backend");
+const api = require("./routes/api");
 
 const app = express();
 
@@ -12,6 +14,8 @@ app.set("view engine", "ejs");
 app.use(express.static("static"));
 
 // 配置外部路由模块
-app.use("/",index);
+app.use("/",frontend);
+app.use("/admin",backend);
+app.use("/api",api);
 
-app.listen(3001);
+app.listen(3000);
