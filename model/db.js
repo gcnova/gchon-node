@@ -7,4 +7,4 @@ mongoose.connect("mongodb://localhost/test",{ useNewUrlParser: true }),function 
     console.log('数据库连接成功');
 };
 
-module.exports = mongoose
+module.exports = mongoose 
